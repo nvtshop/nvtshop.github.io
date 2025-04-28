@@ -265,61 +265,69 @@
                   <div class="card mb-4">
                     <div class="card-body">
                       <div class="mb-3 row">
-                        <label for="exampleFormControlInput1" class="col-md-2 col-form-label">Email address</label>
+                        <label for="emName" class="col-md-2 col-form-label">Họ và Tên</label>
+                        <div class="col-md-10">
+                          <input
+                          type="text"
+                          class="form-control"
+                          id="emName"
+                          placeholder="Nguyễn Văn A"
+                        />
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="emPhone" class="col-md-2 col-form-label">Số điện thoại</label>
+                        <div class="col-md-10">
+                          <input 
+                          type="tel"
+                          class="form-control" 
+                          id="emPhone" 
+                          placeholder="0912345678"/>
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="emEmail" class="col-md-2 col-form-label">Email</label>
                         <div class="col-md-10">
                           <input
                           type="email"
                           class="form-control"
-                          id="exampleFormControlInput1"
-                          placeholder="name@example.com"
+                          id="emEmail"
+                          placeholder="abc@gmail.com"
                         />
                         </div>
                       </div>
                       <div class="mb-3 row">
-                        <label for="exampleFormControlReadOnlyInput1" class="col-md-2 col-form-label">Read only</label>
+                        <label for="emCompanyEmail" class="col-md-2 col-form-label">Mail Công ty</label>
+                        <div class="col-md-10">
+                          <input
+                          type="email"
+                          class="form-control"
+                          id="emCompanyEmail"
+                          placeholder="abc@doji.vn"
+                        />
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="emPassword" class="col-md-2 col-form-label">Mật khẩu</label>
+                        <div class="col-md-10">
+                          <input
+                          type="text"
+                          class="form-control"
+                          id="emPassword"
+                          placeholder="123"
+                        />
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="emDepartment" class="col-md-2 col-form-label">Phòng ban</label>
                         <div class="col-md-10">
                           <input
                           class="form-control"
-                          type="text"
-                          id="exampleFormControlReadOnlyInput1"
-                          placeholder="Readonly input here..."
-                          readonly
+                          list="emListDepartment"
+                          id="emDepartment"
+                          placeholder="Chọn phòng ban"
                         />
-                        </div>
-                      </div>
-                      <div class="mb-3 row">
-                        <label for="exampleFormControlReadOnlyInputPlain1" class="col-md-2 col-form-label">Read plain</label>
-                        <div class="col-md-10">
-                          <input
-                          type="text"
-                          readonly
-                          class="form-control-plaintext"
-                          id="exampleFormControlReadOnlyInputPlain1"
-                          value="email@example.com"
-                        />
-                        </div>
-                      </div>
-                      <div class="mb-3 row">
-                        <label for="exampleFormControlSelect1" class="col-md-2 col-form-label">Example select</label>
-                        <div class="col-md-10">
-                          <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="mb-3 row">
-                        <label for="exampleDataList" class="col-md-2 col-form-label">Datalist example</label>
-                        <div class="col-md-10">
-                          <input
-                          class="form-control"
-                          list="datalistOptions"
-                          id="exampleDataList"
-                          placeholder="Type to search..."
-                        />
-                        <datalist id="datalistOptions">
+                        <datalist id="emListDepartment">
                           <option value="San Francisco"></option>
                           <option value="New York"></option>
                           <option value="Seattle"></option>
@@ -329,39 +337,87 @@
                       </div>
                       </div>
                       <div class="mb-3 row">
-                        <label for="html5-date-input" class="col-md-2 col-form-label">Date</label>
+                        <label for="emPosition" class="col-md-2 col-form-label">Vị trí</label>
                         <div class="col-md-10">
-                          <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
+                          <input
+                          class="form-control"
+                          list="emListPosition"
+                          id="emPosition"
+                          placeholder="Chọn vị trí"
+                        />
+                        <datalist id="emListPosition">
+                          <option value="San Francisco"></option>
+                          <option value="New York"></option>
+                          <option value="Seattle"></option>
+                          <option value="Los Angeles"></option>
+                          <option value="Chicago"></option>
+                        </datalist>
+                      </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="emManager" class="col-md-2 col-form-label">Quản lý</label>
+                        <div class="col-md-10">
+                          <input
+                          class="form-control"
+                          list="emListEmployee"
+                          id="emManager"
+                          placeholder="Chọn người quản lý"
+                        />
+                        <datalist id="emListEmployee">
+                          <option value="San Francisco"></option>
+                          <option value="New York"></option>
+                          <option value="Seattle"></option>
+                          <option value="Los Angeles"></option>
+                          <option value="Chicago"></option>
+                        </datalist>
+                      </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="emGender" class="col-md-2 col-form-label">Giới tính</label>
+                        <div class="col-md-10">
+                          <select class="form-select" id="emGender" aria-label="Default select example">
+                            <option selected>Chọn giới tính</option>
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
+                          </select>
                         </div>
                       </div>
                       <div class="mb-3 row">
-                        <label for="html5-number-input" class="col-md-2 col-form-label">Number</label>
+                        <label for="emRole" class="col-md-2 col-form-label">Vai trò</label>
                         <div class="col-md-10">
-                          <input class="form-control" type="number" value="18" id="html5-number-input" />
+                          <select class="form-select" id="emRole" aria-label="Default select example">
+                            <option selected>Chọn vai trò</option>
+                            <option value="Nam">Admin</option>
+                            <option value="Nữ">Users</option>
+                          </select>
                         </div>
                       </div>
                       <div class="mb-3 row">
-                        <label for="html5-tel-input" class="col-md-2 col-form-label">Phone</label>
+                        <label for="exampleFormControlSelect2" class="col-md-2 col-form-label">Example multiple select</label>
                         <div class="col-md-10">
-                          <input class="form-control" type="tel" value="90-(164)-188-556" id="html5-tel-input" />
+                          <select
+                          multiple
+                          class="form-select"
+                          id="exampleFormControlSelect2"
+                          aria-label="Multiple select example"
+                        >
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
                         </div>
                       </div>
                       <div class="mb-3 row">
-                        <label for="html5-text-input" class="col-md-2 col-form-label">Text</label>
+                        <label for="emStatus" class="col-md-2 col-form-label">Trạng thái</label>
                         <div class="col-md-10">
-                          <input class="form-control" type="text" value="Sneat" id="html5-text-input" />
-                        </div>
-                      </div>
-                      <div class="mb-3 row">
-                        <label for="formFile" class="col-md-2 col-form-label">Default file input example</label>
-                        <div class="col-md-10">
-                          <input class="form-control" type="file" id="formFile" />
-                        </div>
-                      </div>
-                      <div class="mb-3 row">
-                        <label for="exampleFormControlTextarea1" class="col-md-2 col-form-label">Example textarea</label>
-                        <div class="col-md-10">
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <select class="form-select" id="emStatus" aria-label="Default select example" >
+                            <option selected value="active">active</option>
+                            <option value="distable">distable</option>
+                          </select>
                         </div>
                       </div>
                       <div class="d-grid gap-2 col-lg-6 mx-auto">
