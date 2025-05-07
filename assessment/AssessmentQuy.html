@@ -147,48 +147,17 @@
             </li>
 
             <!-- Layouts -->
-            <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-layout"></i>
-                <div data-i18n="Layouts">Thông tin nhân sự</div>
-              </a>
-
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="Employees.html" class="menu-link">
-                    <div data-i18n="Without menu">Nhân sự</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="Departments.html" class="menu-link">
-                    <div data-i18n="Without navbar">Phòng ban</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="Positions.html" class="menu-link">
-                    <div data-i18n="Container">Vị trí</div>
-                  </a>
-                </li>
-                  </a>
-                </li>
-              </ul>
 
             <!-- Components -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">Đánh giá</span></li>
             <!-- Cards -->
             <li class="menu-item">
-              <a href="cards-basic.html" class="menu-link">
+              <a href="AssessmentQuy.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Đánh giá quý</div>
               </a>
             </li>
 
-            <li class="menu-item">
-              <a href="icons-boxicons.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-crown"></i>
-                <div data-i18n="Boxicons">Đánh giá cuối năm</div>
-              </a>
-            </li>
           </ul>
         </aside>
         <!-- / Menu -->
@@ -204,33 +173,282 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> Đánh giá quý</h4>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> Đánh giá quý năm <script>
+                document.write(new Date().getFullYear());
+              </script></h4>
+
 
               <!-- Accordion -->
-              <h5 class="mt-4">Tiêu chí</h5>
-              <div class="row">
-                <div class="mb-12 mb-md-3">
-                  <small style="color: blue;" class="fw-semibold">Nhóm năng lực chuyên môn nghiệp vụ - Trọng số 3 trong nhóm A</small>
-                  <div class="accordion mt-3" id="accordionExample">
-                    <div class="card accordion-item active">
-                      <h2 class="accordion-header" id="heading1">
-                        <button
-                          type="button"
-                          class="accordion-button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion1"
-                          aria-expanded="true"
-                          aria-controls="accordion1"
-                        >
-                        Trình độ chuyên môn nghiệp vụ
-                        </button>
-                      </h2>
+               <form>
+                <div class="row">
+                  <div class="col-xxl">
+                    <div class="card mb-4">
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h5 class="mb-0">THÔNG TIN NGƯỜI ĐƯỢC ĐÁNH GIÁ</h5>
+                      </div>
+                      <div class="card-body">
+                          <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Mã NV</label>
+                            <div class="col-sm-10">
+                              <div class="input-group input-group-merge">
+                                <span id="basic-icon-default-fullname2" class="input-group-text"
+                                  ><i class="bx bx-user"></i
+                                ></span>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="basic-icon-default-fullname"
+                                  placeholder="John Doe"
+                                  aria-label="John Doe"
+                                  aria-describedby="basic-icon-default-fullname2"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Họ và tên</label>
+                            <div class="col-sm-10">
+                              <div class="input-group input-group-merge">
+                                <span id="basic-icon-default-company2" class="input-group-text"
+                                  ><i class="bx bx-buildings"></i
+                                ></span>
+                                <input
+                                  type="text"
+                                  id="basic-icon-default-company"
+                                  class="form-control"
+                                  placeholder="ACME Inc."
+                                  aria-label="ACME Inc."
+                                  aria-describedby="basic-icon-default-company2"
+                                />
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Chức danh</label>
+                            <div class="col-sm-10">
+                              <div class="input-group input-group-merge">
+                                <span id="basic-icon-default-fullname2" class="input-group-text"
+                                  ><i class="bx bx-buildings"></i
+                                ></span>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="basic-icon-default-fullname"
+                                  placeholder="John Doe"
+                                  aria-label="John Doe"
+                                  aria-describedby="basic-icon-default-fullname2"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-company">ĐV/BP</label>
+                            <div class="col-sm-10">
+                              <div class="input-group input-group-merge">
+                                <span id="basic-icon-default-company2" class="input-group-text"
+                                  ><i class="bx bx-buildings"></i
+                                ></span>
+                                <input
+                                  type="text"
+                                  id="basic-icon-default-company"
+                                  class="form-control"
+                                  placeholder="ACME Inc."
+                                  aria-label="ACME Inc."
+                                  aria-describedby="basic-icon-default-company2"
+                                />
+                              </div>
+                            </div>
+                          </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl">
+                    <div class="card mb-4">
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h5 class="mb-0">THÔNG TIN NGƯỜI ĐÁNH GIÁ</h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Mã NV</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-fullname2" class="input-group-text"
+                                ><i class="bx bx-user"></i
+                              ></span>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="basic-icon-default-fullname"
+                                placeholder="John Doe"
+                                aria-label="John Doe"
+                                aria-describedby="basic-icon-default-fullname2"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Họ và tên</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                                ><i class="bx bx-buildings"></i
+                              ></span>
+                              <input
+                                type="text"
+                                id="basic-icon-default-company"
+                                class="form-control"
+                                placeholder="ACME Inc."
+                                aria-label="ACME Inc."
+                                aria-describedby="basic-icon-default-company2"
+                              />
+                            </div>
+                          </div>
+                        </div>
 
-                      <div
-                        id="accordion1"
-                        class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionExample"
-                      >
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Chức danh</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-fullname2" class="input-group-text"
+                                ><i class="bx bx-buildings"></i
+                              ></span>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="basic-icon-default-fullname"
+                                placeholder="John Doe"
+                                aria-label="John Doe"
+                                aria-describedby="basic-icon-default-fullname2"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-company">ĐV/BP</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                                ><i class="bx bx-buildings"></i
+                              ></span>
+                              <input
+                                type="text"
+                                id="basic-icon-default-company"
+                                class="form-control"
+                                placeholder="ACME Inc."
+                                aria-label="ACME Inc."
+                                aria-describedby="basic-icon-default-company2"
+                              />
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="mt-4">Tiêu chí</h5>
+                <div class="row">
+                  <div class="mb-12 mb-md-3">
+                    <small style="color: blue;" class="fw-semibold">Nhóm năng lực chuyên môn nghiệp vụ - Trọng số 3 trong nhóm A</small>
+                    <div class="accordion mt-3" id="accordionExample">
+                      <div class="card accordion-item active">
+                        <h2 class="accordion-header" id="heading1">
+                          <button
+                            type="button"
+                            class="accordion-button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion1"
+                            aria-expanded="true"
+                            aria-controls="accordion1"
+                          >
+                          Trình độ chuyên môn nghiệp vụ
+                          </button>
+                        </h2>
+  
+                        <div
+                          id="accordion1"
+                          class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="col-xl-12 row gy-3 accordion-body">
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio1"
+                              />
+                              <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio2"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio3"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio4"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio5"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                          <button
+                            type="button"
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion2"
+                            aria-expanded="false"
+                            aria-controls="accordion2"
+                          >
+                          Năng suất lao động và khối lượng công việc hoàn thành
+                          </button>
+                        </h2>
+                        <div
+                          id="accordion2"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading2"
+                          data-bs-parent="#accordionExample"
+                        >
                         <div class="col-xl-12 row gy-3 accordion-body">
                           <div class="form-check col-md-2">
                             <input
@@ -287,263 +505,27 @@
                             <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
                           </div>
                         </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="card accordion-item">
-                      <h2 class="accordion-header" id="heading2">
-                        <button
-                          type="button"
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion2"
-                          aria-expanded="false"
-                          aria-controls="accordion2"
+                      <div class="card accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                          <button
+                            type="button"
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion3"
+                            aria-expanded="false"
+                            aria-controls="accordion3"
+                          >
+                          Chất lượng, kết quả công việc hoàn thành
+                          </button>
+                        </h2>
+                        <div
+                          id="accordion3"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading3"
+                          data-bs-parent="#accordionExample"
                         >
-                        Năng suất lao động và khối lượng công việc hoàn thành
-                        </button>
-                      </h2>
-                      <div
-                        id="accordion2"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading2"
-                        data-bs-parent="#accordionExample"
-                      >
-                      <div class="col-xl-12 row gy-3 accordion-body">
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio1"
-                          />
-                          <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio2"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio3"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio4"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio5"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="card accordion-item">
-                      <h2 class="accordion-header" id="heading3">
-                        <button
-                          type="button"
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion3"
-                          aria-expanded="false"
-                          aria-controls="accordion3"
-                        >
-                        Chất lượng, kết quả công việc hoàn thành
-                        </button>
-                      </h2>
-                      <div
-                        id="accordion3"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading3"
-                        data-bs-parent="#accordionExample"
-                      >
-                      <div class="col-xl-12 row gy-3 accordion-body">
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio1"
-                          />
-                          <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio2"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio3"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio4"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio5"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="card accordion-item">
-                      <h2 class="accordion-header" id="heading4">
-                        <button
-                          type="button"
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion4"
-                          aria-expanded="false"
-                          aria-controls="accordion4"
-                        >
-                        Tiến độ thực hiện công việc
-                        </button>
-                      </h2>
-                      <div
-                        id="accordion4"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading4"
-                        data-bs-parent="#accordionExample"
-                      >
-                      <div class="col-xl-12 row gy-3 accordion-body">
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio1"
-                          />
-                          <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio2"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio3"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio4"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio5"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-12 mb-md-3">
-                  <small style="color:blue ;" class="fw-semibold">Nhóm Năng lực dành cho chuyên viên trở lên -  Trọng số 1 trong nhóm A</small>
-                  <div class="accordion mt-3" id="accordionExample">
-                    <div class="card accordion-item active">
-                      <h2 class="accordion-header" id="heading1">
-                        <button
-                          type="button"
-                          class="accordion-button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion1"
-                          aria-expanded="true"
-                          aria-controls="accordion1"
-                        >
-                        Mức độ chủ động, sáng tạo trong công việc
-                        </button>
-                      </h2>
-
-                      <div
-                        id="accordion1"
-                        class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionExample"
-                      >
                         <div class="col-xl-12 row gy-3 accordion-body">
                           <div class="form-check col-md-2">
                             <input
@@ -600,186 +582,27 @@
                             <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
                           </div>
                         </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="card accordion-item">
-                      <h2 class="accordion-header" id="heading2">
-                        <button
-                          type="button"
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion2"
-                          aria-expanded="false"
-                          aria-controls="accordion2"
+                      <div class="card accordion-item">
+                        <h2 class="accordion-header" id="heading4">
+                          <button
+                            type="button"
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion4"
+                            aria-expanded="false"
+                            aria-controls="accordion4"
+                          >
+                          Tiến độ thực hiện công việc
+                          </button>
+                        </h2>
+                        <div
+                          id="accordion4"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading4"
+                          data-bs-parent="#accordionExample"
                         >
-                        Khả năng cải tiến, đổi mới
-                        </button>
-                      </h2>
-                      <div
-                        id="accordion2"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading2"
-                        data-bs-parent="#accordionExample"
-                      >
-                      <div class="col-xl-12 row gy-3 accordion-body">
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio1"
-                          />
-                          <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio2"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio3"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio4"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio5"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="card accordion-item">
-                      <h2 class="accordion-header" id="heading3">
-                        <button
-                          type="button"
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion3"
-                          aria-expanded="false"
-                          aria-controls="accordion3"
-                        >
-                        Khả năng ứng dụng công nghệ
-                        </button>
-                      </h2>
-                      <div
-                        id="accordion3"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading3"
-                        data-bs-parent="#accordionExample"
-                      >
-                      <div class="col-xl-12 row gy-3 accordion-body">
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio1"
-                          />
-                          <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio2"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio3"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio4"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio5"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-12 mb-md-3">
-                  <small style="color:blue ;" class="fw-semibold">Nhóm Năng lực dành cho trưởng nhóm trở lên - Trọng số 3 trong nhóm A</small>
-                  <div class="accordion mt-3" id="accordionExample">
-                    <div class="card accordion-item active">
-                      <h2 class="accordion-header" id="heading1">
-                        <button
-                          type="button"
-                          class="accordion-button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion1"
-                          aria-expanded="true"
-                          aria-controls="accordion1"
-                        >
-                        Khả năng lập kế hoạch và tổ chức triển khai công việc
-                        </button>
-                      </h2>
-
-                      <div
-                        id="accordion1"
-                        class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionExample"
-                      >
                         <div class="col-xl-12 row gy-3 accordion-body">
                           <div class="form-check col-md-2">
                             <input
@@ -836,263 +659,109 @@
                             <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="card accordion-item">
-                      <h2 class="accordion-header" id="heading2">
-                        <button
-                          type="button"
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion2"
-                          aria-expanded="false"
-                          aria-controls="accordion2"
-                        >
-                        Khả năng sử dụng nguồn lực được giao một cách hiệu quả (ngân sách, chi phí, tài sản, nhân lực…)
-                        </button>
-                      </h2>
-                      <div
-                        id="accordion2"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading2"
-                        data-bs-parent="#accordionExample"
-                      >
-                      <div class="col-xl-12 row gy-3 accordion-body">
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio1"
-                          />
-                          <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
                         </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio2"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio3"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio4"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio5"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="card accordion-item">
-                      <h2 class="accordion-header" id="heading3">
-                        <button
-                          type="button"
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion3"
-                          aria-expanded="false"
-                          aria-controls="accordion3"
-                        >
-                        Kỹ năng dẫn dắt nhóm làm việc (định hướng, bố trí, giao việc, điều hành, giám sát, hỗ trợ, đánh giá... )
-                        </button>
-                      </h2>
-                      <div
-                        id="accordion3"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading3"
-                        data-bs-parent="#accordionExample"
-                      >
-                      <div class="col-xl-12 row gy-3 accordion-body">
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio1"
-                          />
-                          <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio2"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio3"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio4"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio5"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="card accordion-item">
-                      <h2 class="accordion-header" id="heading4">
-                        <button
-                          type="button"
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion4"
-                          aria-expanded="false"
-                          aria-controls="accordion4"
-                        >
-                        Kỹ năng giải quyết vấn đề phát sinh
-                        </button>
-                      </h2>
-                      <div
-                        id="accordion4"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading4"
-                        data-bs-parent="#accordionExample"
-                      >
-                      <div class="col-xl-12 row gy-3 accordion-body">
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio1"
-                          />
-                          <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio2"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio3"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio4"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio5"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
-                        </div>
-                      </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="mb-12 mb-md-3">
-                  <small style="color:blue ;" class="fw-semibold">Nhóm năng lực giá trị cốt lõi DOJI và Năng lực phát triển cá nhân - Trọng số 2 trong nhóm A</small>
-                  <div class="accordion mt-3" id="accordionExample">
-                    <div class="card accordion-item active">
-                      <h2 class="accordion-header" id="heading1">
-                        <button
-                          type="button"
-                          class="accordion-button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion1"
-                          aria-expanded="true"
-                          aria-controls="accordion1"
+                  <div class="mb-12 mb-md-3">
+                    <small style="color:blue ;" class="fw-semibold">Nhóm Năng lực dành cho chuyên viên trở lên -  Trọng số 1 trong nhóm A</small>
+                    <div class="accordion mt-3" id="accordionExample">
+                      <div class="card accordion-item active">
+                        <h2 class="accordion-header" id="heading1">
+                          <button
+                            type="button"
+                            class="accordion-button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion1"
+                            aria-expanded="true"
+                            aria-controls="accordion1"
+                          >
+                          Mức độ chủ động, sáng tạo trong công việc
+                          </button>
+                        </h2>
+  
+                        <div
+                          id="accordion1"
+                          class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionExample"
                         >
-                        Sự liêm chính và uy tín cá nhân
-                        </button>
-                      </h2>
-
-                      <div
-                        id="accordion1"
-                        class="accordion-collapse collapse show"
-                        data-bs-parent="#accordionExample"
-                      >
+                          <div class="col-xl-12 row gy-3 accordion-body">
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio1"
+                              />
+                              <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio2"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio3"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio4"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio5"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                          <button
+                            type="button"
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion2"
+                            aria-expanded="false"
+                            aria-controls="accordion2"
+                          >
+                          Khả năng cải tiến, đổi mới
+                          </button>
+                        </h2>
+                        <div
+                          id="accordion2"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading2"
+                          data-bs-parent="#accordionExample"
+                        >
                         <div class="col-xl-12 row gy-3 accordion-body">
                           <div class="form-check col-md-2">
                             <input
@@ -1149,320 +818,793 @@
                             <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
                           </div>
                         </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="card accordion-item">
-                      <h2 class="accordion-header" id="heading2">
-                        <button
-                          type="button"
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion2"
-                          aria-expanded="false"
-                          aria-controls="accordion2"
+                      <div class="card accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                          <button
+                            type="button"
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion3"
+                            aria-expanded="false"
+                            aria-controls="accordion3"
+                          >
+                          Khả năng ứng dụng công nghệ
+                          </button>
+                        </h2>
+                        <div
+                          id="accordion3"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading3"
+                          data-bs-parent="#accordionExample"
                         >
-                        Khả năng  phối hợp và làm việc nhóm
-                        </button>
-                      </h2>
-                      <div
-                        id="accordion2"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading2"
-                        data-bs-parent="#accordionExample"
-                      >
-                      <div class="col-xl-12 row gy-3 accordion-body">
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio1"
-                          />
-                          <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
+                        <div class="col-xl-12 row gy-3 accordion-body">
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio1"
+                            />
+                            <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio2"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio3"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio4"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio5"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
+                          </div>
                         </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio2"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
                         </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio3"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio4"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio5"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="card accordion-item">
-                      <h2 class="accordion-header" id="heading3">
-                        <button
-                          type="button"
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion3"
-                          aria-expanded="false"
-                          aria-controls="accordion3"
-                        >
-                        Thái độ học hỏi, học tập để nâng cao tri thức
-                        </button>
-                      </h2>
-                      <div
-                        id="accordion3"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading3"
-                        data-bs-parent="#accordionExample"
-                      >
-                      <div class="col-xl-12 row gy-3 accordion-body">
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio1"
-                          />
-                          <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio2"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio3"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio4"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio5"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="card accordion-item">
-                      <h2 class="accordion-header" id="heading4">
-                        <button
-                          type="button"
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion4"
-                          aria-expanded="false"
-                          aria-controls="accordion4"
-                        >
-                        Kỹ năng tổng hợp, truyền đạt thông tin và giao tiếp công việc hiệu quả
-                        </button>
-                      </h2>
-                      <div
-                        id="accordion4"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading4"
-                        data-bs-parent="#accordionExample"
-                      >
-                      <div class="col-xl-12 row gy-3 accordion-body">
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio1"
-                          />
-                          <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio2"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio3"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio4"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio5"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="card accordion-item">
-                      <h2 class="accordion-header" id="heading5">
-                        <button
-                          type="button"
-                          class="accordion-button collapsed"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accordion5"
-                          aria-expanded="false"
-                          aria-controls="accordion5"
-                        >
-                        Tinh thần tập thể và Gắn bó với Tập đoàn
-                        </button>
-                      </h2>
-                      <div
-                        id="accordion5"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading5"
-                        data-bs-parent="#accordionExample"
-                      >
-                      <div class="col-xl-12 row gy-3 accordion-body">
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio1"
-                          />
-                          <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio2"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio3"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio4"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
-                        </div>
-                        <div class="form-check col-md-2">
-                          <input
-                            name="default-radio-1"
-                            class="form-check-input"
-                            type="radio"
-                            value=""
-                            id="defaultRadio5"
-                            checked
-                          />
-                          <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
-                        </div>
-                      </div>
                       </div>
                     </div>
                   </div>
+                  <div class="mb-12 mb-md-3">
+                    <small style="color:blue ;" class="fw-semibold">Nhóm Năng lực dành cho trưởng nhóm trở lên - Trọng số 3 trong nhóm A</small>
+                    <div class="accordion mt-3" id="accordionExample">
+                      <div class="card accordion-item active">
+                        <h2 class="accordion-header" id="heading1">
+                          <button
+                            type="button"
+                            class="accordion-button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion1"
+                            aria-expanded="true"
+                            aria-controls="accordion1"
+                          >
+                          Khả năng lập kế hoạch và tổ chức triển khai công việc
+                          </button>
+                        </h2>
+  
+                        <div
+                          id="accordion1"
+                          class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="col-xl-12 row gy-3 accordion-body">
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio1"
+                              />
+                              <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio2"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio3"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio4"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio5"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                          <button
+                            type="button"
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion2"
+                            aria-expanded="false"
+                            aria-controls="accordion2"
+                          >
+                          Khả năng sử dụng nguồn lực được giao một cách hiệu quả (ngân sách, chi phí, tài sản, nhân lực…)
+                          </button>
+                        </h2>
+                        <div
+                          id="accordion2"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading2"
+                          data-bs-parent="#accordionExample"
+                        >
+                        <div class="col-xl-12 row gy-3 accordion-body">
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio1"
+                            />
+                            <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio2"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio3"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio4"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio5"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="card accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                          <button
+                            type="button"
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion3"
+                            aria-expanded="false"
+                            aria-controls="accordion3"
+                          >
+                          Kỹ năng dẫn dắt nhóm làm việc (định hướng, bố trí, giao việc, điều hành, giám sát, hỗ trợ, đánh giá... )
+                          </button>
+                        </h2>
+                        <div
+                          id="accordion3"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading3"
+                          data-bs-parent="#accordionExample"
+                        >
+                        <div class="col-xl-12 row gy-3 accordion-body">
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio1"
+                            />
+                            <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio2"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio3"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio4"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio5"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="card accordion-item">
+                        <h2 class="accordion-header" id="heading4">
+                          <button
+                            type="button"
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion4"
+                            aria-expanded="false"
+                            aria-controls="accordion4"
+                          >
+                          Kỹ năng giải quyết vấn đề phát sinh
+                          </button>
+                        </h2>
+                        <div
+                          id="accordion4"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading4"
+                          data-bs-parent="#accordionExample"
+                        >
+                        <div class="col-xl-12 row gy-3 accordion-body">
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio1"
+                            />
+                            <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio2"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio3"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio4"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio5"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-12 mb-md-3">
+                    <small style="color:blue ;" class="fw-semibold">Nhóm năng lực giá trị cốt lõi DOJI và Năng lực phát triển cá nhân - Trọng số 2 trong nhóm A</small>
+                    <div class="accordion mt-3" id="accordionExample">
+                      <div class="card accordion-item active">
+                        <h2 class="accordion-header" id="heading1">
+                          <button
+                            type="button"
+                            class="accordion-button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion1"
+                            aria-expanded="true"
+                            aria-controls="accordion1"
+                          >
+                          Sự liêm chính và uy tín cá nhân
+                          </button>
+                        </h2>
+  
+                        <div
+                          id="accordion1"
+                          class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="col-xl-12 row gy-3 accordion-body">
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio1"
+                              />
+                              <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio2"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio3"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio4"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
+                            </div>
+                            <div class="form-check col-md-2">
+                              <input
+                                name="default-radio-1"
+                                class="form-check-input"
+                                type="radio"
+                                value=""
+                                id="defaultRadio5"
+                                checked
+                              />
+                              <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                          <button
+                            type="button"
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion2"
+                            aria-expanded="false"
+                            aria-controls="accordion2"
+                          >
+                          Khả năng  phối hợp và làm việc nhóm
+                          </button>
+                        </h2>
+                        <div
+                          id="accordion2"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading2"
+                          data-bs-parent="#accordionExample"
+                        >
+                        <div class="col-xl-12 row gy-3 accordion-body">
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio1"
+                            />
+                            <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio2"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio3"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio4"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio5"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="card accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                          <button
+                            type="button"
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion3"
+                            aria-expanded="false"
+                            aria-controls="accordion3"
+                          >
+                          Thái độ học hỏi, học tập để nâng cao tri thức
+                          </button>
+                        </h2>
+                        <div
+                          id="accordion3"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading3"
+                          data-bs-parent="#accordionExample"
+                        >
+                        <div class="col-xl-12 row gy-3 accordion-body">
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio1"
+                            />
+                            <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio2"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio3"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio4"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio5"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="card accordion-item">
+                        <h2 class="accordion-header" id="heading4">
+                          <button
+                            type="button"
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion4"
+                            aria-expanded="false"
+                            aria-controls="accordion4"
+                          >
+                          Kỹ năng tổng hợp, truyền đạt thông tin và giao tiếp công việc hiệu quả
+                          </button>
+                        </h2>
+                        <div
+                          id="accordion4"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading4"
+                          data-bs-parent="#accordionExample"
+                        >
+                        <div class="col-xl-12 row gy-3 accordion-body">
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio1"
+                            />
+                            <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio2"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio3"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio4"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio5"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="card accordion-item">
+                        <h2 class="accordion-header" id="heading5">
+                          <button
+                            type="button"
+                            class="accordion-button collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion5"
+                            aria-expanded="false"
+                            aria-controls="accordion5"
+                          >
+                          Tinh thần tập thể và Gắn bó với Tập đoàn
+                          </button>
+                        </h2>
+                        <div
+                          id="accordion5"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading5"
+                          data-bs-parent="#accordionExample"
+                        >
+                        <div class="col-xl-12 row gy-3 accordion-body">
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio1"
+                            />
+                            <label class="form-check-label" for="defaultRadio1"> 1 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio2"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio2"> 2 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio3"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio3"> 3 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio4"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio4"> 4 điểm</label>
+                          </div>
+                          <div class="form-check col-md-2">
+                            <input
+                              name="default-radio-1"
+                              class="form-check-input"
+                              type="radio"
+                              value=""
+                              id="defaultRadio5"
+                              checked
+                            />
+                            <label class="form-check-label" for="defaultRadio5"> 5 điểm</label>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
                 </div>
-                
-              </div>
+               </form>
               <!--/ Accordion -->
 
               <!--/ Advance Styling Options -->
